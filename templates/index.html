@@ -14,7 +14,7 @@
       <div class="price-card">
         <div class="label">Price</div>
         <div class="value">USD {{ harga }}</div>
-        <div class="change">–Durung</div>
+        <div id="perubahan">{{ change }}</div>
         <div class="chart-placeholder"></div>
       </div>
   
@@ -43,7 +43,7 @@
     <script>
       const initialPriceFromTemplate = "{{ initialPrice }}";
       const predictedPriceFromTemplate = "{{ predict }}";
-      const updatedPriceFromTemplate = "{{ harga }}"
+      const updatedPriceFromTemplate = "{{ harga }}";
   </script>
   <script src="{% static 'js/script.js' %}"></script>
 </html>
